@@ -129,6 +129,7 @@ public class SavedData
 
     public void SaveConfig(string main, string backup)
     {
+        // TODO: We can use Directories instead
         new FileInfo(main).Directory?.Create();
         if (File.Exists(main))
         {
